@@ -11,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.(js|jsx)$/,
+        test: /.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: "babel-loader", // js와 jsx 파일을 가져오는 loader에요.
       },
