@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/ichbinmin2/realworld-react-redux.git"
   },
+  "script": {
+    "build": "webpack build --config ./webpack.config.js",
+    "start": "webpack-dev-server --open"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
