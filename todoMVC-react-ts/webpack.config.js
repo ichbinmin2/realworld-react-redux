@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.jsx", // 파일을 찾기 시작하는 입구
+  entry: "./src/index.tsx", // 파일을 찾기 시작하는 입구
   mode: "development",
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
