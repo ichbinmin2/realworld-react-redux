@@ -8,6 +8,10 @@ const Header = () => {
     setTask(event.target.value);
   };
 
+  const onInputKeyUp = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") setTask("");
+  };
+
   return (
     <header className="header">
       <h1>todos</h1>
@@ -16,6 +20,7 @@ const Header = () => {
         placeholder="What needs to be done?"
         value={task}
         onChange={onInputChange}
+        onKeyUp={onInputKeyUp}
       />
     </header>
   );
