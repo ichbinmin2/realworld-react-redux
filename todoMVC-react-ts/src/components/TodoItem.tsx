@@ -1,14 +1,19 @@
 import React from "react";
 
-const TodoItem = () => {
+type Todo = {
+  task: string;
+  completed: boolean;
+};
+
+const TodoItem = ({ task, completed }: Todo) => {
   return (
-    <li className="completed">
+    <li className={completed ? "completed" : ""}>
       <div className="view">
-        <input className="toggle" type="checkbox" checked={false} />
-        <label>투두 리스트</label>
+        <input className="toggle" type="checkbox" checked={completed} />
+        <label>{task}</label>
         <button className="destroy"></button>
       </div>
-      <input className="edit" value="투두 리스트" />
+      <input className="edit" value="to do list" />
     </li>
   );
 };

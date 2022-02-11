@@ -12,7 +12,7 @@ const Main = () => {
       />
       <label htmlFor="toggle-all"></label>
       <ul className="todo-list">
-        <TodoItem />
+        <TodoItem task="To do list" completed={false} />
       </ul>
     </section>
   );
