@@ -3,6 +3,7 @@ import TodoItem from "./TodoItem";
 
 type TodoListType = {
   todoList: { id: string; task: string; completed: boolean }[];
+  // 배열 안에 객체인 todoList 의 값들을 객체 안에 담아 type을 지정.
 };
 
 const Main = ({ todoList }: TodoListType) => {

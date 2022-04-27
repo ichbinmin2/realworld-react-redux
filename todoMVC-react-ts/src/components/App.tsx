@@ -17,8 +17,8 @@ const App = () => {
   return (
     <section className="todoapp">
       <div>
-        <Header />
-        <Main todoList={todoList}/>
+        <Header addTask={setTodoList} />
+        <Main todoList={todoList} />
         <Footer />
       </div>
     </section>
